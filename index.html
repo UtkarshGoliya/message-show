@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Last project - Level 1</title>
+    <style>
+      div {
+        text-align: center;
+        background-color: aqua;
+        padding: 30px 0;
+        margin-top: 20px;
+        display: none;
+        font-size: 70px;
+      }
+      button {
+        color: rgb(75, 10, 136);
+        background-color: rgb(228, 110, 110);
+        padding: 10px;
+        font-size: 20px;
+      }
+    </style>
+    <link rel="icon" href="favicon.ico" />
+  </head>
+  <body>
+    <p style="font-size: 30px;">My last project in this course</p>
+    <button onclick="myFunction()">See the message</button>
+    <div id="myDiv">
+      <p>Thank You</p>
+    </div>
+    <script>
+      function myFunction() {
+        var div = document.getElementById("myDiv");
+        if (div.style.display == "none") {
+          div.style.display = "block";
+        } else {
+          div.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
